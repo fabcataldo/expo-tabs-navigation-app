@@ -16,7 +16,7 @@ const ProductScreen = () => {
     <>
       <Stack.Screen
         options={{
-          headerTitle: "Detalles",
+          headerTitle: `${product.title}`,
         }}
       ></Stack.Screen>
       <View className="px-5 mt-10">
