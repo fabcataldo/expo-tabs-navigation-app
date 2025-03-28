@@ -1,5 +1,5 @@
-// import { Ionicons } from "@expo/vector-icons";
-// import AntDesign from "@expo/vector-icons/AntDesign";
+import { Ionicons } from "@expo/vector-icons";
+import AntDesign from "@expo/vector-icons/AntDesign";
 import React from "react";
 import { Drawer } from "expo-router/drawer";
 import CustomDrawer from "@/components/shared/CustomDrawer";
@@ -23,6 +23,17 @@ const DrawerLayout = () => {
       ahora si se renderiza el contenido personalizado, y las opciones
       de abajo
       */}
+      <Drawer.Screen
+        name="(tabs)" // This is the name of the page and must match the url from root
+        options={{
+          headerShown: false,
+          drawerLabel: "Tabs + Stack",
+          title: "Tabs + Stack",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="albums-outline" size={size} color={color} />
+          ),
+        }}
+      />
       <Drawer.Screen
         name="user/index" // This is the name of the page and must match the url from root
         options={{
