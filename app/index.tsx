@@ -7,7 +7,7 @@ const App = () => {
   //lo de abajo, con stack navigation normal
   // return <Redirect href="/home" />;
 
-  return <Redirect href="/tabs/home" />;
+  return <Redirect href="/drawer/user" />;
   // return (
   //   <SafeAreaView>
   //     <View className="mt-6 mx-5">
